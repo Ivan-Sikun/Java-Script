@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 6;
+      let y = 14;
+      let z = 4;
+      // x += y - x++ * z;
+      console.log("Початкові значення:");
+      console.log("x = " + x + ", y = " + y + ", z = " + z);
+      // Перший етап: x++ * z
+      /*  x++ означає, що використовуться значення x і тільки після цього збільшується на 1. 
+      Отже, x++ * z = 6 * 4 = 24. */
+      let temp = x++ * z;
+      console.log("x++ * z = " + temp);
+      console.log("Після x++: x = " + x);
+      // Другий етап: y - (x++ * z)
+      /*Далі вираз x += y - x++ * z:
+      y = 14
+      x++ * z = 24
+      Тому y - x++ * z = 14 - 24 = -10*/
+      let temp2 = y - temp;
+      console.log("y - (x++ * z) = " + temp2);
+      // Третій етап: x += temp2
+      /* Отже, вираз x += -10, де x зараз дорівнює 7:
+      x = 7
+      x += -10 значить x = x + (-10) = 7 + (-10) = -3*/
+      x += temp2;
+      console.log("x += y - x++ * z: x = " + x);
+      console.log(
+        "Після x += y - x++ * z: x = " + x + ", y = " + y + ", z = " + z
+      );
+    </script>
+  </body>
+</html>

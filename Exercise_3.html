@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // створюю зміні
+      let number = 13;
+      let string = "Chrome";
+      let isTrue = true;
+      let nul = null;
+      let undefine;
+      // введення типу кожного значення
+      let typeNumber = typeof number;
+      let typeString = typeof string;
+      let typeIsTrue = typeof isTrue;
+      let typeNull = typeof nul;
+      let typeUndefined = typeof undefine;
+      // виводжу значення і тип за допомогою alert
+      alert("Значення: " + number + ", Тип: " + typeNumber);
+      alert("Значення: " + string + ", Тип: " + typeString);
+      alert("Значення: " + isTrue + ", Тип: " + typeIsTrue);
+      alert("Значення: " + nul + ", Тип: " + typeNull);
+      alert("Значення: " + undefine + ", Тип: " + typeUndefined);
+      // виводжу значення і тип за допомогою document.write
+      document.write(
+        "Значення: " + number + ", Тип: " + typeNumber + "<br/><hr>"
+      );
+      document.write(
+        "Значення: " + string + ", Тип: " + typeString + "<br/><hr>"
+      );
+      document.write(
+        "Значення: " + isTrue + ", Тип: " + typeIsTrue + "<br/><hr>"
+      );
+      document.write("Значення: " + nul + ", Тип: " + typeNull + "<br/><hr>");
+      document.write(
+        "Значення: " + undefine + ", Тип: " + typeUndefined + "<br/><hr>"
+      );
+    </script>
+  </body>
+</html>

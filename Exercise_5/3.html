@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 6;
+      let y = 14;
+      let z = 4;
+      // y /= x + (5 % z);
+      console.log("Початкові значення:");
+      console.log("x = " + x + ", y = " + y + ", z = " + z);
+      // Перший етап: обчислюю залишок від ділення 5 на 4
+      let temp1 = 5 % z;
+      console.log("5 % z = " + temp1);
+      // Другий етап: додаю x і результат обчислення temp1
+      let temp2 = x + temp1;
+      console.log("x + (5 % z) = " + temp2);
+      // Третій етап: ділю y на результат обчислення temp2
+      y /= temp2;
+      console.log("y /= x + (5 % z): y = " + y);
+      console.log(
+        "Після y /= x + (5 % z) x = " + x + ", y = " + y + ", z = " + z
+      );
+    </script>
+  </body>
+</html>

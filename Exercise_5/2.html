@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 6;
+      let y = 14;
+      let z = 4;
+      // z = --x - y * 5;
+      console.log("Початкові значення:");
+      console.log("x = " + x + ", y = " + y + ", z = " + z);
+      // Перший етап: спочатку обчислюється вираз x++ * z
+      let temp = x++ * z;
+      console.log("x++ * z = " + temp);
+      console.log("Після x++: x = " + x);
+      // Другий етап: потім обчислюється y - temp
+      let temp2 = y - temp;
+      console.log("y - (x++ * z) = " + temp2);
+      // Третій етап: x += temp2
+      x += temp2;
+      console.log("x += y - x++ * z: x = " + x);
+      console.log(
+        "Після z = --x - y * 5 x = " + x + ", y = " + y + ", z = " + z
+      );
+    </script>
+  </body>
+</html>

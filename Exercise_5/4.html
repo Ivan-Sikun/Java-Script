@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 6;
+      let y = 14;
+      let z = 4;
+      // z - x++ + y * 5;
+      console.log("Початкові значення:");
+      console.log("x = " + x + ", y = " + y + ", z = " + z);
+      // Перший етап: обчислюється оператор інкременту x++. x++ означає, що використовується значення x (тобто 6), а потім воно збільшується на 1. Отже, після цієї операції x стане 7
+      let tempX = x++;
+      console.log("Після x++: tempX = " + tempX + ", x = " + x);
+      // Другий етап: обчислюється вираз y * 5
+      let tempY = y * 5;
+      console.log("y * 5 = " + tempY);
+      // Третій етап: обчислюється вираз z - tempX + tempY
+      let result = z - tempX + tempY;
+      console.log("z - tempX + tempY = " + result);
+      console.log(
+        "Після z - x++ + y * 5 x = " + x + ", y = " + y + ", z = " + z
+      );
+    </script>
+  </body>
+</html>
