@@ -1,0 +1,28 @@
+form {
+    max-width: 480px; 
+    margin: 0 auto;
+    padding: 10px; 
+}
+
+.mb-3 {
+    position: relative;
+    padding-bottom: 10px; 
+}
+
+.validation {
+    position: absolute;
+    top: 35px; 
+    right: -25px; 
+    color: red; 
+}
+
+.phoneOperator {
+    position: absolute;
+    top: 34px; 
+    right: 12px; 
+    width: 28px; 
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
